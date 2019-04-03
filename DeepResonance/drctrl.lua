@@ -10,6 +10,8 @@ local component = require("component")
 local keyboard = require("keyboard")
 local term = require("term")
 
+local DRLib = require("drlib") -- loadfile ?
+
 --------------------------
 -- CONFIGURATION VALUES --
 --------------------------
@@ -38,6 +40,8 @@ local sHeadline = sName .. " - " .. sVersion
 local generatorProxy = nil
 -- The proxied Redstone I/O object
 local redstoneProxy = nil
+-- Connected pedestals
+local pedestals = {}
 -- Determines if the script is running
 local running = true
 -- Maximum energy that can be stored in the generator
@@ -62,6 +66,10 @@ local vWidth, vHeight = term.getViewport()
 ------------------------
 -- INTERNAL FUNCTIONS --
 ------------------------
+
+function init()
+  pedestals = DRLib.findPedestals()
+end
 
 function writeCentered(str)
   if (str == nil or string.len(str) == 0) then
