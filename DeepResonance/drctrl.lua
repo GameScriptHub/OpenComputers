@@ -184,6 +184,9 @@ if term ~= nil then
     term.setCursorBlink(false)
 end
 
+-- Initialize Core
+init()
+
 -- Get full generator address
 generatorAddress = component.get(config.generatorAddress)
 
