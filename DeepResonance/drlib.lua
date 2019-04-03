@@ -1,13 +1,13 @@
 local DRLib = {}
 
 function DRLib.getConfig()
-  local h = io.open("/etc/drconf.cfg", "r")
-  local c = h:read("*all")
-  local o = serialization.unserialize(c)
+    local h = io.open("/etc/drconf.cfg", "r")
+    local c = h:read("*all")
+    local o = serialization.unserialize(c)
 
-  h:close()
+    h:close()
 
-  return o
+    return o
 end
 
 function DRLib.getTotalRF(strength, purity)
