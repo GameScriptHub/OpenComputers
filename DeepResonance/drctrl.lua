@@ -166,6 +166,12 @@ function printStats()
     -- Display discharge at marker
     term.write("Discharge at: " .. math.floor(deactivateAt * 100) .. "%")
 
+    -- Move down a bit
+    term.setCursor(1, 7)
+
+    -- Display amount of pedestals
+    term.write("Pedestal Count: " .. #pedestals)
+
     -- Energy I/O
     -- term.write("Energy I/O: " .. math.floor(energyDiff) .. " RF/t")
 
