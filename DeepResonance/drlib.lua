@@ -1,3 +1,5 @@
+local serialization = require("serialization")
+
 local DRLib = {}
 
 function DRLib.getConfig()
