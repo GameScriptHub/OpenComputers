@@ -1,4 +1,5 @@
 local serialization = require("serialization")
+local component = require("component")
 
 local DRLib = {}
 
