@@ -1,4 +1,4 @@
-local DRConf = require("drlib")
+local DRConf = loadfile("/etc/drconf.lua")
 local DRLib = {}
 
 function DRLib.getTotalRF(strength, purity)
