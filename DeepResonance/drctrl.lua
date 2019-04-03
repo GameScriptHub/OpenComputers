@@ -10,16 +10,13 @@ local component = require("component")
 local keyboard = require("keyboard")
 local term = require("term")
 
-local DRLib = require("drlib") -- loadfile ?
+local DRLib = require("drlib")
+local DRConf = loadfile("/etc/drconf.lua")
 
 --------------------------
 -- CONFIGURATION VALUES --
 --------------------------
 
--- The address of the connected Deep Resonance generator (it doesn't matter on which block the adapter is attached)
-local generatorAddress = "f41e0681"
--- The address of the connected Redstone I/O block that has to attached to the Generator Controller block
-local redstoneIOAddress = "e04c8d01"
 -- Minimum amount of energy in percent until the generator will be activated
 local activateAt = 0.25
 -- Minimum amount of energy in percent until the generator will be deactivated
@@ -36,6 +33,11 @@ local sVersion = "0.01a"
 -- Full headline
 local sHeadline = sName .. " - " .. sVersion
 
+
+-- The address of the connected Deep Resonance generator (it doesn't matter on which block the adapter is attached)
+local generatorAddress = nil
+-- The address of the connected Redstone I/O block that has to attached to the Generator Controller block
+local redstoneIOAddress = nil
 -- The proxied generator object
 local generatorProxy = nil
 -- The proxied Redstone I/O object
@@ -181,10 +183,10 @@ if term ~= nil then
 end
 
 -- Get full generator address
-generatorAddress = component.get(generatorAddress)
+generatorAddress = component.get(DRConf.generatorAddress)
 
 -- Get full Redstone I/O address
-redstoneIOAddress = component.get(redstoneIOAddress)
+redstoneIOAddress = component.get(DRConf.redstoneIOAddress)
 
 -- Validate the generator address
 if generatorAddress == nil then
