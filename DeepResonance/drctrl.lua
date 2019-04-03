@@ -11,12 +11,13 @@ local keyboard = require("keyboard")
 local term = require("term")
 
 local DRLib = require("drlib")
-local DRConf = loadfile("/etc/drconf.lua")
 
 --------------------------
 -- CONFIGURATION VALUES --
 --------------------------
 
+-- Global script configuration
+local config = {}
 -- Minimum amount of energy in percent until the generator will be activated
 local activateAt = 0.25
 -- Minimum amount of energy in percent until the generator will be deactivated
@@ -70,6 +71,7 @@ local vWidth, vHeight = term.getViewport()
 ------------------------
 
 function init()
+  config = DRLib.getConfig()
   pedestals = DRLib.findPedestals()
 end
 
@@ -183,10 +185,10 @@ if term ~= nil then
 end
 
 -- Get full generator address
-generatorAddress = component.get(DRConf.generatorAddress)
+generatorAddress = component.get(config.generatorAddress)
 
 -- Get full Redstone I/O address
-redstoneIOAddress = component.get(DRConf.redstoneIOAddress)
+redstoneIOAddress = component.get(config.redstoneIOAddress)
 
 -- Validate the generator address
 if generatorAddress == nil then
