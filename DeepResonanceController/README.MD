@@ -1,7 +1,6 @@
 # DeepResonanceController - Automate your DeepResonance Generator
 
-**Current Version:** 0.01a
-
+**Current Version:** 0.01a<br/>
 **Developers:** [GameScriptHub](https://github.com/GameScriptHub)
 
 ### Features
@@ -19,8 +18,7 @@
 
 Please consider using [OPPM](https://ocdoc.cil.li/tutorial:program:oppm) for installing this package! You have to add the GameScriptHub repository to your local OPPM repositories. To do this just execute `oppm register https://github.com/GameScriptHub/OpenComputers`.
 
-Install: `oppm install deepresonance-controller`
-
+Install: `oppm install deepresonance-controller`<br/>
 Update: `oppm update deepresonance-controller`
 
 ### Bugs / Proposals
