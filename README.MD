@@ -15,6 +15,12 @@ Here's a list of all currently available packages:
 
 * [deepresonance-controller](https://github.com/GameScriptHub/OpenComputers/tree/master/DeepResonanceController) (DeepResonance Generator Automation)
 
+## Planned packages
+
+Here's a list of all *planned* packages:
+
+* TermUI library (ASCII-based "drawing" of graphical user elements)
+
 ## Proposals
 
 You found a bug? You got an idea? Please consider using the [Issue Tracker](https://github.com/GameScriptHub/OpenComputers/issues) or create a Pull Request :)
