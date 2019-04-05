@@ -7,7 +7,7 @@
 
 ### WIP Features
 
-* Finds all connected pedestals to provide information for each crystal
+* Finds all connected pedestals to provide information for each crystal (remaining lifetime, stored energy, etc.)
 * Provide information about RF input / output
 * Automated production of a 100% perfect crystal
 

@@ -11,15 +11,9 @@ oppm register https://github.com/GameScriptHub/OpenComputers
 
 ## Available packages
 
-Here's a list of all currently available packages.
+Here's a list of all currently available packages:
 
-### DeepResonanceController
-
-The DeepResonanceController will take care of enabling / disabling your DeepResonance generator. It also provides useful information about the current status of the generator, e.g. stored energy, remaining lifetime of connected crystals, etc. For more information consider the [README](https://github.com/GameScriptHub/OpenComputers/tree/master/DeepResonanceController) of the respective package. Since this script has some configuration that has to be done *before* the script can be used you should really have a look at the README.
-
-Installation: `oppm install deepresonance-controller`
-
-Updating: `oppm update deepresonance-controller`
+* [deepresonance-controller](https://github.com/GameScriptHub/OpenComputers/tree/master/DeepResonanceController) (DeepResonance Generator Automation)
 
 ## Proposals
 
