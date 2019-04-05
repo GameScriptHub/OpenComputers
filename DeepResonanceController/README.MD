@@ -1,5 +1,8 @@
 # DeepResonanceController - Automate your DeepResonance Generator
 
+**Current Version:** 0.01a
+**Developers:** [GameScriptHub](https://github.com/GameScriptHub)
+
 ### Features
 
 * Saves valuable crystals by only activating the power generation if necessary
