@@ -4,7 +4,7 @@ This repository provides various ready-to-use scripts for your OpenComputers sys
 To use OPPM for installation / updates just add the repository with this command:
 
 ```
-oppm register https://github.com/GameScriptHub/OpenComputers
+oppm register GameScriptHub/OpenComputers
 ```
 
 **Note** that this is not an official repository and you'll use these scripts on your own risk.
