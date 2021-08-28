@@ -15,7 +15,7 @@ for address, type in c.list() do
     print("== " .. string.upper(type) .. " : " .. address .. " ==")
 
     for a,b in pairs(proxy) do
-      print("  -> " .. a)
+      print("  -> " .. a .. " - " .. tostring(b))
     end
 
     print()
